@@ -4,8 +4,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Desenvolvedora Web, Power BI, Analista de Dados, Portfólio, Front-End"
+    />
 
-    <title>Emanuelle Ávila Bairros</title>
+    <meta name="author" content="Emanuelle Ávila" />
+
+    <title>Emanuelle S d Ávila Bairros</title>
     <meta
       name="description"
       content="Portfólio profissional de Emanuelle Ávila Bairros — Analista de Sistemas"
@@ -62,11 +68,10 @@
 
     <section id="inicio" class="hero container">
       <div class="hero-text" data-aos="fade-down">
-        <h1>Analista de Sistemas</h1>
+        <h1>Desenvolvedora Web & Analista de Dados</h1>
         <p>
-          Transformando ideias em soluções digitais funcionais e modernas.
-          Focada em desenvolvimento front-end, organização de código e melhoria
-          contínua.
+          Desenvolvo sites modernos e dashboards estratégicos, unindo tecnologia
+          e análise de dados para gerar soluções digitais eficientes.
         </p>
 
         <a
@@ -199,17 +204,35 @@
     <section id="contato" class="container contato">
       <h2 class="section-title">Contato</h2>
 
-      <form class="contact-form" action="obrigado.html">
-        <input type="text" placeholder="Seu nome" required />
-        <input type="email" placeholder="Seu email" required />
-        <textarea placeholder="Sua mensagem..." required></textarea>
+      <form
+        class="contact-form"
+        action="https://formsubmit.co/emanuelle.flash@gmail.com"
+        method="POST"
+      >
+        <input type="text" name="name" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu email" required />
+        <textarea
+          name="message"
+          placeholder="Sua mensagem..."
+          required
+        ></textarea>
+
+        <!-- Evita spam -->
+        <input type="hidden" name="_captcha" value="false" />
+
+        <!-- Redirecionamento -->
+        <input
+          type="hidden"
+          name="_next"
+          value="https://manu21avila.github.io/PORTIFOLIO-EMANUELLE-AVILA-BAIRROS/obrigado.html"
+        />
 
         <button type="submit" class="btn">Enviar</button>
       </form>
 
       <div class="social">
         <a href="https://github.com/Manu21avila" target="_blank">
-          ><i class="bi bi-github"></i
+          <i class="bi bi-github"></i
         ></a>
         <a
           href="https://www.linkedin.com/in/emanuelle-sd-%C3%A1vila/"

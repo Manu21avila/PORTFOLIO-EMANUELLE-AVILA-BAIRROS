@@ -1,32 +1,32 @@
-🌐 Portfólio — Sistema de Gerenciamento
+👩🏻‍💻 Emanuelle Ávila Bairros
 
-Projeto desenvolvido com foco em prática de desenvolvimento web, organização de código e versionamento utilizando Git e GitHub.
+💻 Desenvolvedora Web & Analista de Dados
+📊 Foco em Dashboards Estratégicos e Soluções Digitais
 
-Este sistema simula o gerenciamento de bairros por meio de uma interface web, demonstrando conceitos fundamentais de front-end e boas práticas de estruturação de projeto.
+🌐 Sobre o Projeto
 
-📌 Objetivo
+Este repositório contém meu portfólio profissional, desenvolvido para apresentar minhas habilidades em:
 
-Demonstrar habilidades em:
+Desenvolvimento Web Responsivo
 
-Estruturação e organização de projetos
+Organização e estruturação de código
 
-Versionamento com Git
+Construção de dashboards e análise de dados
 
-Publicação com GitHub Pages
+Publicação de aplicações com GitHub Pages
 
-Desenvolvimento Front-End
-
-Escrita de código limpo e legível
+O projeto demonstra minha capacidade de unir tecnologia e visão estratégica de dados, criando soluções digitais funcionais e modernas.
 
 🚀 Acesse o Projeto
 
-🌍 Site publicado
-https://manu21avila.github.io/PORTIFOLIO-EMANUELLE-AVILA-BAIRROS/
+🌍 Site publicado (GitHub Pages)
+👉 https://manu21avila.github.io/PORTIFOLIO-EMANUELLE-AVILA-BAIRROS/
 
 📁 Repositório no GitHub
-https://github.com/Manu21avila/PORTIFOLIO-EMANUELLE-AVILA-BAIRROS
+👉 https://github.com/Manu21avila/PORTIFOLIO-EMANUELLE-AVILA-BAIRROS
 
-🛠 Tecnologias Utilizadas
+🛠️ Tecnologias Utilizadas
+🌐 Desenvolvimento Web
 
 HTML5
 
@@ -34,64 +34,92 @@ CSS3
 
 JavaScript
 
+Responsividade Mobile
+
+Organização semântica
+
+📊 Análise de Dados
+
+Excel
+
+Power BI
+
+Modelagem de Dados
+
+Construção de Indicadores
+
+⚙️ Ferramentas
+
 Git
 
 GitHub
 
 GitHub Pages
 
-📂 Estrutura do Projeto
-📁 projeto
-├── index.html
-├── css/
-├── js/
-├── assets/
-└── README.md
+📌 Funcionalidades do Projeto
 
-(A estrutura pode variar conforme a organização do código)
+✔️ Layout moderno e responsivo
+✔️ Menu mobile interativo
+✔️ Carrossel de projetos com navegação automática
+✔️ Modal para visualização detalhada
+✔️ Formulário de contato funcional
+✔️ Efeitos visuais e animações com AOS
+
+🎯 Objetivo Profissional
+
+Busco oportunidade na área de tecnologia como:
+
+Desenvolvedora Web Júnior
+
+Analista de Dados Júnior
+
+Analista de BI
+
+Desenvolvedora Front-End
+
+Meu foco é aplicar conhecimentos técnicos para desenvolver soluções digitais eficientes e orientadas a dados.
+
+📈 Aprendizados Aplicados
+
+Durante o desenvolvimento deste projeto, foram praticados:
+
+Estruturação de layout responsivo
+
+Manipulação de DOM com JavaScript
+
+Criação de interações dinâmicas
+
+Organização modular de código
+
+Deploy de aplicação estática
+
+Controle de versão com Git
 
 ⚙️ Como Executar Localmente
 
-Clone o repositório
+Clone o repositório:
 
 git clone https://github.com/Manu21avila/PORTIFOLIO-EMANUELLE-AVILA-BAIRROS.git
 
-Acesse a pasta do projeto
+Acesse a pasta:
 
 cd PORTIFOLIO-EMANUELLE-AVILA-BAIRROS
 
 Abra o arquivo:
 
 index.html
-
-📈 Aprendizados Desenvolvidos
-
-Durante este projeto foram praticados:
-
-Manipulação de estrutura HTML
-
-Estilização com CSS
-
-Lógica com JavaScript
-
-Organização de arquivos
-
-Uso de commits semânticos
-
-Deploy de aplicação estática
-
 👩‍💻 Autora
 
 Emanuelle Ávila Bairros
 
 🔗 LinkedIn
-www.linkedin.com/in/emanuelle-sd-ávila
+https://www.linkedin.com/in/emanuelle-sd-ávila/
 
 💻 GitHub
 https://github.com/Manu21avila
 
-📄 Licença
+⭐ Considerações
 
-Este projeto foi desenvolvido para fins de portfólio.
+Este projeto foi desenvolvido para fins de portfólio e demonstração de habilidades técnicas.
 
-⭐ Obrigada por visitar este projeto!
+Obrigada por visitar este repositório!
