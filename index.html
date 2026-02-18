@@ -1,0 +1,370 @@
+<!doctype html>
+
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Emanuelle Ávila Bairros</title>
+    <meta
+      name="description"
+      content="Portfólio profissional de Emanuelle Ávila Bairros — Analista de Sistemas"
+    />
+
+    <link rel="icon" href="img/19-ico.ico" />
+
+    <!-- Google Fonts -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Icons -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+  </head>
+
+  <body>
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <header>
+      <div class="container nav">
+        <h2>Emanuelle Ávila Bairros</h2>
+
+        <!-- Botão Menu Mobile -->
+        <div id="btn-menu" class="btn-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <nav>
+          <a href="#inicio">Início</a>
+          <a href="#skills">Skills</a>
+          <a href="#sobre">Sobre</a>
+          <a href="#portfolio">Projetos</a>
+          <a href="#contato">Contato</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section id="inicio" class="hero container">
+      <div class="hero-text" data-aos="fade-down">
+        <h1>Analista de Sistemas</h1>
+        <p>
+          Transformando ideias em soluções digitais funcionais e modernas.
+          Focada em desenvolvimento front-end, organização de código e melhoria
+          contínua.
+        </p>
+
+        <a
+          class="btn"
+          href="https://api.whatsapp.com/send?phone=5551999865636"
+          target="_blank"
+        >
+          Fale comigo
+        </a>
+      </div>
+
+      <img
+        src="img/20.jpg"
+        class="hero-img"
+        data-aos="fade-left"
+        alt="Foto de Emanuelle Ávila"
+      />
+    </section>
+
+    <!-- SKILLS -->
+
+    <section id="skills" class="container">
+      <h2 class="section-title">Skills</h2>
+
+      <div class="cards">
+        <div class="card" data-aos="zoom-in">HTML</div>
+        <div class="card" data-aos="zoom-in">CSS</div>
+        <div class="card" data-aos="zoom-in">JavaScript</div>
+        <div class="card" data-aos="zoom-in">Python</div>
+        <div class="card" data-aos="zoom-in">WordPress</div>
+        <div class="card" data-aos="zoom-in">E-commerce</div>
+      </div>
+    </section>
+
+    <!-- SOBRE -->
+
+    <section id="sobre" data-aos="fade-up" class="container sobre">
+      <img src="img/10.jpg" alt="Foto de Emanuelle Ávila" />
+
+      <div>
+        <h2>Sobre mim</h2>
+        <p>
+          Sou Emanuelle Ávila Bairros, estudante de Análise e Desenvolvimento de
+          Sistemas. Possuo experiência administrativa aliada ao desenvolvimento
+          tecnológico, com foco em construir soluções eficientes, organizadas e
+          escaláveis.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJETOS -->
+
+    <section id="projetos">
+      <div class="container">
+        <h2 class="section-title">Projetos</h2>
+
+        <div class="carousel-wrapper">
+          <button class="arrow left" onclick="scrollProjects(-1)">
+            &#10094;
+          </button>
+
+          <div class="carousel" id="carousel">
+            <!-- PROJETO 1 -->
+            <div
+              class="project-card"
+              onclick="
+                openModal(
+                  'Sistema de Bairros',
+                  'Projeto web para gerenciamento e organização de bairros com interface responsiva.',
+                  'HTML • CSS • JavaScript',
+                  'img/18.jpg',
+                  'https://github.com/Manu21avila/PORTIFOLIO-EMANUELLE-AVILA-BAIRROS',
+                )
+              "
+            >
+              <img src="img/18.jpg" alt="Demonstrator Projeto 1" />
+              <h3>Sistema de Bairros</h3>
+              <p>Ver detalhes</p>
+            </div>
+
+            <!-- PROJETO 2 -->
+            <div
+              class="project-card"
+              onclick="
+                openModal(
+                  'Portfólio Web',
+                  'Site pessoal responsivo publicado com GitHub Pages.',
+                  'HTML • CSS',
+                  'img/20.jpg',
+                  'https://github.com/Manu21avila',
+                )
+              "
+            >
+              <img src="img/20.jpg" alt="Demonstrator Projeto 2" />
+              <h3>Portfólio Web</h3>
+              <p>Ver detalhes</p>
+            </div>
+
+            <!-- PROJETO 3 -->
+            <div
+              class="project-card"
+              onclick="
+                openModal(
+                  'Projeto Front-End',
+                  'Experimentos de layout e responsividade.',
+                  'HTML • CSS • JS',
+                  'img/10.jpg',
+                  'https://github.com/Manu21avila',
+                )
+              "
+            >
+              <img src="img/10.jpg" alt="Demonstrator Projeto 3" />
+              <h3>Projeto Front-End</h3>
+              <p>Ver detalhes</p>
+            </div>
+          </div>
+
+          <button class="arrow right" onclick="scrollProjects(1)">
+            &#10095;
+          </button>
+        </div>
+
+        <!-- DOTS (AGORA NO LUGAR CERTO) -->
+        <div class="carousel-dots" id="dots"></div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+
+    <section id="contato" class="container contato">
+      <h2 class="section-title">Contato</h2>
+
+      <form class="contact-form" action="obrigado.html">
+        <input type="text" placeholder="Seu nome" required />
+        <input type="email" placeholder="Seu email" required />
+        <textarea placeholder="Sua mensagem..." required></textarea>
+
+        <button type="submit" class="btn">Enviar</button>
+      </form>
+
+      <div class="social">
+        <a href="https://github.com/Manu21avila" target="_blank">
+          ><i class="bi bi-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/emanuelle-sd-%C3%A1vila/"
+          target="_blank"
+        >
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="https://www.instagram.com/manu_avila.21/" target="_blank">
+          <i class="bi bi-instagram"></i>
+        </a>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 — Emanuelle Ávila Bairros</p>
+    </footer>
+
+    <script>
+      const carousel = document.getElementById("carousel");
+      const cards = document.querySelectorAll(".project-card");
+      const dotsContainer = document.getElementById("dots");
+
+      let autoScroll;
+      let index = 0;
+
+      /* ===== CRIAR DOTS ===== */
+
+      cards.forEach((_, i) => {
+        const dot = document.createElement("span");
+
+        dot.addEventListener("click", () => {
+          index = i;
+          updateCarousel();
+        });
+
+        dotsContainer.appendChild(dot);
+      });
+
+      const dots = dotsContainer.querySelectorAll("span");
+
+      /* ===== ATUALIZA POSIÇÃO ===== */
+
+      function updateCarousel() {
+        const cardWidth = cards[0].offsetWidth + 20;
+
+        carousel.scrollTo({
+          left: index * cardWidth,
+          behavior: "smooth",
+        });
+
+        dots.forEach((d) => d.classList.remove("active"));
+        dots[index].classList.add("active");
+      }
+
+      /* ===== SETAS ===== */
+
+      function scrollProjects(direction) {
+        index += direction;
+
+        if (index < 0) index = cards.length - 1;
+        if (index >= cards.length) index = 0;
+
+        updateCarousel();
+      }
+
+      /* ===== AUTO SCROLL ===== */
+
+      function startAutoScroll() {
+        autoScroll = setInterval(() => {
+          index++;
+          if (index >= cards.length) index = 0;
+          updateCarousel();
+        }, 3500);
+      }
+
+      carousel.addEventListener("mouseenter", () => clearInterval(autoScroll));
+      carousel.addEventListener("mouseleave", startAutoScroll);
+
+      /* ===== INIT ===== */
+
+      updateCarousel();
+      startAutoScroll();
+    </script>
+
+    <script>
+      function openModal(title, desc, tech, img, link) {
+        document.getElementById("modalTitle").innerText = title;
+        document.getElementById("modalDesc").innerText = desc;
+        document.getElementById("modalTech").innerText = tech;
+        document.getElementById("modalImg").src = img;
+        document.getElementById("modalLink").href = link;
+
+        document.getElementById("projectModal").style.display = "flex";
+      }
+
+      function closeModal() {
+        document.getElementById("projectModal").style.display = "none";
+      }
+
+      // Fechar clicando fora
+      window.onclick = function (e) {
+        if (e.target.id === "projectModal") {
+          closeModal();
+        }
+      };
+    </script>
+
+    <!-- MODAL PROJETOS -->
+
+    <div id="projectModal" class="modal">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+
+        <img id="modalImg" />
+
+        <h2 id="modalTitle"></h2>
+
+        <p id="modalDesc"></p>
+
+        <p class="tech" id="modalTech"></p>
+
+        <a id="modalLink" class="btn" target="_blank"> Ver no GitHub </a>
+      </div>
+    </div>
+
+    <!-- Menu Mobile -->
+    <div id="menu-mobile" class="menu-mobile">
+      <nav>
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+
+    <div id="overlay-menu" class="overlay-menu"></div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 900,
+        once: true,
+      });
+    </script>
+
+    <script>
+      const glow = document.getElementById("cursorGlow");
+
+      document.addEventListener("mousemove", (e) => {
+        glow.style.left = e.clientX + "px";
+        glow.style.top = e.clientY + "px";
+      });
+    </script>
+  </body>
+</html>

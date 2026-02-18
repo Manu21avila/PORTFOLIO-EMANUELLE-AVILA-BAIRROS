@@ -1,0 +1,479 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ===== CORES BASE ===== */
+
+body {
+  background: #111111; /* fundo preto neutro */
+  color: #e5e5e5;
+}
+
+/* CONTAINER */
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 60px 0;
+}
+
+/* HEADER */
+
+header {
+  background: #1a1a1a;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* MENU */
+
+nav a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #d4d4d4;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #3b82f6;
+}
+
+/* HERO */
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.hero-img {
+  width: 260px;
+  border-radius: 20px;
+  box-shadow: 0 0 25px rgba(59, 130, 246, 0.35);
+}
+
+/* BOTÃO */
+
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  background: #3b82f6;
+  padding: 12px 26px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.08);
+  background: #2563eb;
+}
+
+/* TITULOS */
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+/* CARDS / SKILLS */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1f1f1f;
+  padding: 30px;
+  text-align: center;
+  border-radius: 12px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.6);
+}
+
+/* PROJETOS */
+
+.project-card {
+  min-width: 260px;
+  background: #1f1f1f;
+  border-radius: 12px;
+  padding: 16px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.project-card:hover {
+  transform: scale(1.04);
+}
+
+.project-card img {
+  width: 100%;
+  border-radius: 14px 14px 0 0;
+}
+
+/* CARROSSEL */
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.arrow {
+  background: #1f1f1f;
+  border: none;
+  color: white;
+  font-size: 28px;
+  padding: 12px 16px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.project-card {
+  min-width: 260px;
+  max-width: 260px;
+  flex: 0 0 auto;
+}
+
+/* SOBRE */
+
+.sobre {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.sobre img {
+  width: 240px;
+  border-radius: 14px;
+}
+
+/* SOCIAL */
+
+.social {
+  text-align: center;
+  font-size: 32px;
+}
+
+.social a {
+  margin: 0 12px;
+  color: #d4d4d4;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  color: #3b82f6;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #1a1a1a;
+  color: #9ca3af;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ================= CARROSSEL PROJETOS ================= */
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 20px 0;
+
+  /* esconder barra de scroll */
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.project-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.project-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.15);
+}
+
+/* SETAS */
+
+.arrow:hover {
+  background: #2563eb;
+}
+
+.left {
+  margin-right: 10px;
+}
+
+.right {
+  margin-left: 10px;
+}
+
+/* ================= DOTS DO CARROSSEL ================= */
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.carousel-dots span {
+  width: 10px;
+  height: 10px;
+  background: #cbd5e1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.carousel-dots span.active {
+  background: #2563eb;
+  transform: scale(1.3);
+}
+
+/* ================= MODAL ================= */
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: #1f1f1f;
+  color: #e5e5e5;
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 420px;
+  width: 90%;
+  text-align: center;
+  animation: modalPop 0.3s ease;
+}
+
+.modal-content img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.close {
+  float: right;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.tech {
+  margin: 12px 0;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+@keyframes modalPop {
+  from {
+    transform: scale(0.7);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* ===== FORMULÁRIO ===== */
+
+.contact-form {
+  max-width: 500px;
+  margin: 0 auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #1f1f1f;
+  border: 1px solid #333;
+  padding: 12px;
+  border-radius: 8px;
+  color: white;
+  font-size: 14px;
+}
+
+.contact-form textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+}
+
+/* BOTÃO HAMBURGUER */
+
+.btn-menu {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.btn-menu span {
+  width: 28px;
+  height: 3px;
+  background: #e5e5e5;
+  display: block;
+  border-radius: 3px;
+}
+
+/* MENU MOBILE */
+
+.menu-mobile {
+  position: fixed;
+  top: 0;
+  right: -260px;
+  width: 260px;
+  height: 100vh;
+  background: #111;
+  padding-top: 80px;
+  transition: 0.35s ease;
+  z-index: 998;
+}
+
+.menu-mobile.abrir-menu {
+  right: 0;
+}
+
+.menu-mobile nav {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 30px;
+}
+
+.menu-mobile a {
+  color: #e5e5e5;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* OVERLAY */
+
+.overlay-menu {
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+  z-index: 997;
+}
+
+.overlay-menu.ativo {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* RESPONSIVO */
+
+@media (max-width: 900px) {
+  nav ul {
+    display: none;
+  }
+
+  .btn-menu {
+    display: flex;
+  }
+}
+
+/* ===== CURSOR GLOW EFFECT ===== */
+
+.cursor-glow {
+  position: fixed;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  pointer-events: none;
+  background: radial-gradient(
+    circle,
+    rgba(59, 130, 246, 0.18) 0%,
+    rgba(0, 0, 0, 0) 70%
+  );
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  transition: transform 0.05s linear;
+}
+
+/* Mantém conteúdo acima do glow */
+body > * {
+  position: relative;
+  z-index: 1;
+}

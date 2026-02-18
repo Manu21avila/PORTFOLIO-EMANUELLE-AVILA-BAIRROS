@@ -1,0 +1,10 @@
+{
+<<<<<<< HEAD
+    "livePreview.defaultPreviewPath": "/index.html",
+    "githubPullRequests.ignoredPullRequestBranches": [
+        "main"
+    ]
+=======
+    "livePreview.defaultPreviewPath": "/index.html"
+>>>>>>> escola/main
+}
