@@ -12,8 +12,21 @@ html {
 /* ===== CORES BASE ===== */
 
 body {
-  background: #111111; /* fundo preto neutro */
+  background: linear-gradient(135deg, #0f0f0f 0%, #141414 40%, #1a1a1a 100%);
   color: #e5e5e5;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: radial-gradient(
+    rgba(255, 255, 255, 0.02) 1px,
+    transparent 1px
+  );
+  background-size: 40px 40px;
+  pointer-events: none;
+  z-index: 0;
 }
 
 /* CONTAINER */
@@ -118,10 +131,14 @@ nav a:hover {
 
 .card {
   background: #1f1f1f;
-  padding: 30px;
+  padding: 25px 15px; /* PADRÃO */
   text-align: center;
   border-radius: 12px;
   transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 80px;
 }
 
 .card:hover {
@@ -179,11 +196,14 @@ nav a:hover {
   display: flex;
   gap: 40px;
   align-items: center;
+  justify-content: center; /* CENTRALIZA */
+  text-align: left;
 }
 
 .sobre img {
   width: 240px;
   border-radius: 14px;
+  object-fit: cover;
 }
 
 @media (max-width: 768px) {
@@ -208,6 +228,11 @@ nav a:hover {
   margin: 0 12px;
   color: #d4d4d4;
   transition: 0.3s;
+  text-decoration: none;
+}
+
+.social i {
+  display: inline-block;
 }
 
 .social a:hover {
@@ -493,8 +518,8 @@ footer {
 
 .cursor-glow {
   position: fixed;
-  width: 140px;
-  height: 140px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   pointer-events: none;
   background: radial-gradient(
