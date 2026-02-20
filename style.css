@@ -98,6 +98,16 @@ nav a:hover {
   color: #ffffff;
 }
 
+/* FOTO PERFIL */
+
+.foto-perfil {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #6c63ff; /* cor principal */
+}
+
 /* CARDS / SKILLS */
 
 .cards {
@@ -483,18 +493,18 @@ footer {
 
 .cursor-glow {
   position: fixed;
-  width: 260px;
-  height: 260px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
   pointer-events: none;
   background: radial-gradient(
     circle,
-    rgba(59, 130, 246, 0.18) 0%,
+    rgba(59, 130, 246, 0.12) 0%,
     rgba(0, 0, 0, 0) 70%
   );
   transform: translate(-50%, -50%);
   z-index: 0;
-  transition: transform 0.05s linear;
+  transition: transform 0.08s linear;
 }
 
 /* Mantém conteúdo acima do glow */

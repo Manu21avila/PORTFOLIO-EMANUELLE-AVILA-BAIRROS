@@ -36,8 +36,6 @@
     <!-- CSS -->
 
     <link rel="stylesheet" href="style.css" />
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   </head>
 
   <body>
@@ -70,8 +68,9 @@
       <div class="hero-text" data-aos="fade-down">
         <h1>Desenvolvedora Web & Analista de Dados</h1>
         <p>
-          Desenvolvo sites modernos e dashboards estratégicos, unindo tecnologia
-          e análise de dados para gerar soluções digitais eficientes.
+          Transformo dados em soluções digitais. Desenvolvimento interfaces
+          modernas integradas a dashboards estratégicos para apoiar decisões de
+          negócio.
         </p>
 
         <a
@@ -81,14 +80,11 @@
         >
           Fale comigo
         </a>
+
+        <a href="curriculo.pdf" class="btn" download>Baixar Currículo</a>
       </div>
 
-      <img
-        src="img/20.jpg"
-        class="hero-img"
-        data-aos="fade-left"
-        alt="Foto de Emanuelle Ávila"
-      />
+      <img src="img/20.png" class="foto-perfil" alt="Foto de Emanuelle Ávila" />
     </section>
 
     <!-- SKILLS -->
@@ -100,10 +96,22 @@
         <div class="card" data-aos="zoom-in">HTML</div>
         <div class="card" data-aos="zoom-in">CSS</div>
         <div class="card" data-aos="zoom-in">JavaScript</div>
+        <div class="card" data-aos="zoom-in">Responsividade</div>
         <div class="card" data-aos="zoom-in">Python</div>
-        <div class="card" data-aos="zoom-in">WordPress</div>
+        <div class="card" data-aos="zoom-in">Pandas</div>
+        <div class="card" data-aos="zoom-in">Power BI</div>
+        <div class="card" data-aos="zoom-in">Excel</div>
+        <div class="card" data-aos="zoom-in">Modelagem de Dados</div>
         <div class="card" data-aos="zoom-in">E-commerce</div>
       </div>
+
+      <section class="container">
+        <h2 class="section-title">Diferencial</h2>
+        <p>
+          Experiência administrativa aplicada à análise de indicadores,
+          organização de processos e apoio à tomada de decisão.
+        </p>
+      </section>
     </section>
 
     <!-- SOBRE -->
@@ -115,9 +123,11 @@
         <h2>Sobre mim</h2>
         <p>
           Sou Emanuelle Ávila Bairros, estudante de Análise e Desenvolvimento de
-          Sistemas. Possuo experiência administrativa aliada ao desenvolvimento
-          tecnológico, com foco em construir soluções eficientes, organizadas e
-          escaláveis.
+          Sistemas com experiência administrativa aplicada à tecnologia. Atuo no
+          desenvolvimento de interfaces web modernas e na análise de dados para
+          geração de insights estratégicos. Busco oportunidade para integrar
+          desenvolvimento e dados na criação de soluções digitais orientadas a
+          resultados.
         </p>
       </div>
     </section>
@@ -205,25 +215,22 @@
       <h2 class="section-title">Contato</h2>
 
       <form
-        class="contact-form"
-        action="https://formsubmit.co/emanuelle.flash@gmail.com"
+        action="https://formspree.io/f/xwvnnwqe"
         method="POST"
+        class="contact-form"
       >
-        <input type="text" name="name" placeholder="Seu nome" required />
+        <input type="text" name="nome" placeholder="Seu nome" required />
         <input type="email" name="email" placeholder="Seu email" required />
         <textarea
-          name="message"
-          placeholder="Sua mensagem..."
+          name="mensagem"
+          placeholder="Sua mensagem"
           required
         ></textarea>
 
-        <!-- Evita spam -->
-        <input type="hidden" name="_captcha" value="false" />
-
-        <!-- Redirecionamento -->
+        <!-- REDIRECT CORRETO -->
         <input
           type="hidden"
-          name="_next"
+          name="_redirect"
           value="https://manu21avila.github.io/PORTIFOLIO-EMANUELLE-AVILA-BAIRROS/obrigado.html"
         />
 
@@ -232,8 +239,8 @@
 
       <div class="social">
         <a href="https://github.com/Manu21avila" target="_blank">
-          <i class="bi bi-github"></i
-        ></a>
+          <i class="bi bi-github"></i>
+        </a>
         <a
           href="https://www.linkedin.com/in/emanuelle-sd-%C3%A1vila/"
           target="_blank"
