@@ -114,11 +114,12 @@ nav a:hover {
 /* FOTO PERFIL */
 
 .foto-perfil {
-  width: 180px;
-  height: 180px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
-  border: 4px solid #6c63ff; /* cor principal */
+  padding: 5px;
+  background: linear-gradient(135deg, #3b82f6, #6366f1);
 }
 
 /* CARDS / SKILLS */
@@ -206,6 +207,23 @@ nav a:hover {
   object-fit: cover;
 }
 
+.sobre-social {
+  margin-top: 20px;
+  display: flex;
+  gap: 18px;
+}
+
+.sobre-social a {
+  font-size: 26px;
+  color: #d4d4d4;
+  transition: 0.3s;
+}
+
+.sobre-social a:hover {
+  color: #3b82f6;
+  transform: translateY(-4px);
+}
+
 @media (max-width: 768px) {
   .sobre img {
     width: 180px;
@@ -225,7 +243,7 @@ nav a:hover {
 }
 
 .social a {
-  margin: 0 12px;
+  margin: 0 15px;
   color: #d4d4d4;
   transition: 0.3s;
   text-decoration: none;
@@ -236,7 +254,7 @@ nav a:hover {
 }
 
 .social a:hover {
-  color: #3b82f6;
+  color: #548eec;
 }
 
 /* FOOTER */
@@ -582,4 +600,39 @@ body > * {
 .form-box .btn {
   width: 180px;
   align-self: center;
+}
+
+/* ===== CTA FINAL ===== */
+
+.cta-contato {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.cta-contato h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.cta-contato p {
+  color: #cbd5e1;
+  margin-bottom: 30px;
+}
+
+.whats-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: #25d366;
+  padding: 14px 28px;
+  border-radius: 14px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.whats-btn:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 25px rgba(37, 211, 102, 0.4);
 }
