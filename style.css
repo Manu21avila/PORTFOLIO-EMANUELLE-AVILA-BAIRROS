@@ -537,3 +537,31 @@ body > * {
   position: relative;
   z-index: 1;
 }
+
+/* ===== PÁGINA OBRIGADO ===== */
+
+.obrigado-section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.obrigado-box {
+  background: #1f1f1f;
+  padding: 50px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 500px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.obrigado-box h1 {
+  margin-bottom: 15px;
+  font-size: 28px;
+}
+
+.obrigado-box p {
+  margin-bottom: 25px;
+  color: #cbd5e1;
+}
