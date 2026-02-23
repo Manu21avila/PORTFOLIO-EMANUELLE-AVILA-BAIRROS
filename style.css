@@ -402,54 +402,6 @@ footer {
   }
 }
 
-/* ===== FORMULÁRIO PROFISSIONAL ===== */
-
-.contato {
-  text-align: center;
-}
-
-.contact-form,
-#contact-form {
-  max-width: 520px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  background: #1a1a1a;
-  padding: 40px;
-  border-radius: 18px;
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.45);
-}
-
-#contact-form input,
-#contact-form textarea {
-  width: 100%;
-  padding: 14px 16px;
-  border-radius: 12px;
-  border: 1px solid #2a2a2a;
-  background: #111;
-  color: #e5e5e5;
-  font-size: 15px;
-  transition: 0.3s;
-}
-
-#contact-form input:focus,
-#contact-form textarea:focus {
-  outline: none;
-  border-color: #3b82f6;
-  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2);
-}
-
-#contact-form textarea {
-  min-height: 130px;
-  resize: none;
-}
-
-#contact-form .btn {
-  align-self: center;
-  width: 180px;
-}
-
 /* BOTÃO HAMBURGUER */
 
 .btn-menu {
@@ -587,4 +539,47 @@ body > * {
   font-size: 60px;
   color: #3b82f6;
   margin-bottom: 20px;
+}
+
+/* ===== FORMULÁRIO CENTRALIZADO DEFINITIVO ===== */
+
+.form-box {
+  max-width: 520px;
+  margin: 40px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: rgba(25, 25, 25, 0.85);
+  padding: 45px;
+  border-radius: 20px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+}
+
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 14px;
+  border: 1px solid #2a2a2a;
+  background: #111;
+  color: #e5e5e5;
+  font-size: 15px;
+  transition: 0.3s ease;
+}
+
+.form-box input:focus,
+.form-box textarea:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.2);
+}
+
+.form-box textarea {
+  min-height: 140px;
+  resize: none;
+}
+
+.form-box .btn {
+  width: 180px;
+  align-self: center;
 }
