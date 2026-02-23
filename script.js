@@ -15,27 +15,25 @@ overlay.addEventListener("click", () => {
 const form = document.getElementById("contact-form");
 
 if (form) {
-  form.addEventListener("submit", async function (e) {
+  form.addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const formData = new FormData(form);
-
-    try {
-      const response = await fetch(form.action, {
-        method: form.method,
-        body: formData,
-        headers: {
-          Accept: "application/json",
-        },
+    fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: {
+        Accept: "application/json",
+      },
+    })
+      .then((response) => {
+        if (response.ok) {
+          window.location.href = "obrigado.html";
+        } else {
+          alert("Erro ao enviar formulário.");
+        }
+      })
+      .catch(() => {
+        alert("Erro de conexão.");
       });
-
-      if (response.ok) {
-        window.location.href = "obrigado.html";
-      } else {
-        alert("Erro ao enviar. Tente novamente.");
-      }
-    } catch (error) {
-      alert("Erro de conexão. Tente novamente.");
-    }
   });
 }
