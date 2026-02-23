@@ -220,25 +220,18 @@
     <section id="contato" class="container contato">
       <h2 class="section-title">Contato</h2>
 
-      <form
-        action="https://formspree.io/f/xwvnnwqe"
-        method="POST"
-        class="contact-form"
-      >
-        <input type="text" name="nome" placeholder="Seu nome" required />
-        <input type="email" name="email" placeholder="Seu email" required />
-        <textarea
-          name="mensagem"
-          placeholder="Sua mensagem"
-          required
-        ></textarea>
-
-        <!-- REDIRECT CORRETO -->
+      <form action="https://formspree.io/f/xwvnnwqe" method="POST">
         <input
           type="hidden"
-          name="_redirect"
+          name="_next"
           value="https://manu21avila.github.io/PORTFOLIO-EMANUELLE-AVILA-BAIRROS/obrigado.html"
         />
+
+        <input type="hidden" name="_captcha" value="false" />
+
+        <input type="text" name="name" placeholder="Seu nome" required />
+        <input type="email" name="email" placeholder="Seu email" required />
+        <textarea name="message" placeholder="Sua mensagem" required></textarea>
 
         <button type="submit" class="btn">Enviar</button>
       </form>
