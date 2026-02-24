@@ -77,6 +77,19 @@ nav a:hover {
   gap: 40px;
 }
 
+.hero h1 {
+  font-size: 48px;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.hero p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  max-width: 600px;
+}
+
 /* BOTÃO */
 
 .btn {
@@ -108,7 +121,7 @@ nav a:hover {
 /* FOTO PERFIL */
 
 .hero-img {
-  width: 300px;
+  width: 340px;
   aspect-ratio: 1 / 1; /* GARANTE quadrado */
   border-radius: 50%;
   overflow: hidden;
@@ -132,11 +145,17 @@ nav a:hover {
 
 /* CARDS / SKILLS */
 
+#skills {
+  text-align: center;
+  padding: 80px 0;
+}
+
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-  margin-top: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 200px));
+  justify-content: center;
+  gap: 25px;
+  margin-top: 40px;
 }
 
 .skill-card {
