@@ -162,18 +162,18 @@ section {
 
 .skills-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 25px;
-  margin-top: 40px;
+  margin-top: 50px;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .skill-card {
-  padding: 18px;
-  border-radius: 12px;
   background: rgba(255, 255, 255, 0.04);
+  padding: 14px;
+  border-radius: 8px;
   border: 1px solid rgba(255, 255, 255, 0.08);
   text-align: center;
   font-weight: 500;
@@ -207,7 +207,7 @@ section {
 }
 
 .diferencial-text {
-  max-width: 750px;
+  max-width: 700px;
   margin: 0 auto;
   line-height: 1.8;
   font-size: 18px;
@@ -216,48 +216,42 @@ section {
 
 /* PROJETOS */
 
-.project-card {
-  min-width: 260px;
-  background: #1f1f1f;
-  border-radius: 12px;
-  padding: 16px;
-  transition: 0.3s;
-  cursor: pointer;
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
 }
-
-.project-card:hover {
-  transform: scale(1.04);
-}
-
-.project-card img {
-  width: 100%;
-  border-radius: 14px 14px 0 0;
-}
-
-/* CARROSSEL */
 
 .carousel {
   display: flex;
-  gap: 25px;
-  overflow-x: hidden;
+  overflow-x: auto;
+  gap: 30px;
   scroll-behavior: smooth;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
 .project-card {
   flex: 0 0 300px;
   background: #1f1f1f;
-  border-radius: 16px;
-  padding: 18px;
-  transition: 0.3s;
+  border-radius: 12px;
+  padding: 20px;
 }
 
 .project-card img {
   width: 100%;
   height: 170px;
   object-fit: cover;
-  border-radius: 12px;
+  border-radius: 10px;
   margin-bottom: 15px;
+}
+
+.carousel-btn {
+  background: rgba(255, 255, 255, 0.18);
+  border: none;
+  font-size: 28px;
+  padding: 10px 14px;
+  cursor: pointer;
+  border-radius: 50%;
 }
 
 /* SOBRE */
@@ -307,13 +301,10 @@ section {
 /* SOCIAL */
 
 .social {
-  text-align: center;
-  font-size: 32px;
-  margin-top: 60px;
-  padding-top: 20px;
   display: flex;
   justify-content: center;
   gap: 30px;
+  margin-top: 80px;
 }
 
 .social a {

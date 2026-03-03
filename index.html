@@ -155,50 +155,43 @@
 
     <!-- PROJETOS -->
     <section id="projetos">
-      <div class="container">
-        <h2 class="section-title">Projetos</h2>
+      <h2 class="section-title">Projetos</h2>
 
-        <div class="carousel-wrapper">
-          <button class="arrow left" onclick="scrollProjects(-1)">
-            &#10094;
-          </button>
+      <div class="carousel-wrapper">
+        <button id="prevBtn" class="carousel-btn">&#9664;</button>
+        <div class="carousel">
+          <!-- PROJETO 1 -->
+          <div class="project-card">
+            <img src="img/projeto1.png" alt="Análise Estratégica de Vendas" />
+            <h3>Análise Estratégica de Vendas</h3>
+            <p>Projeto de análise de dados usando Python e visualizações.</p>
+            <a href="https://github.com/Manu21avila/..." target="_blank"
+              >Ver no GitHub</a
+            >
+          </div>
 
-          <div class="carousel" id="carousel">
-            <!-- PROJETO 1 -->
-            <div class="project-card">
-              <img src="img/projeto1.png" alt="Projeto Análise de Vendas" />
-              <h3>Análise Estratégica de Vendas</h3>
-              <p>
-                Projeto de análise de dados utilizando Python, Pandas e
-                visualizações.
-              </p>
-              <a href="LINK_GITHUB" target="_blank">Ver no GitHub</a>
-            </div>
+          <!-- PROJETO 2 -->
+          <div class="project-card">
+            <img src="img/projeto2.png" alt="Portfólio Profissional" />
+            <h3>Portfólio Profissional</h3>
+            <p>Site responsivo com HTML, CSS e JS.</p>
+            <a href="https://github.com/Manu21avila/..." target="_blank"
+              >Ver no GitHub</a
+            >
+          </div>
 
-            <!-- PROJETO 2 -->
-            <div class="project-card">
-              <img src="img/projeto2.png" alt="Portfólio" />
-              <h3>Portfólio Profissional</h3>
-              <p>Site responsivo desenvolvido com HTML, CSS e JavaScript.</p>
-              <a href="LINK_GITHUB" target="_blank">Ver no GitHub</a>
-            </div>
-
-            <!-- PROJETO 3 -->
-            <div class="project-card">
-              <img src="img/projeto3.png" alt="Sistema de Bairros" />
-              <h3>Sistema de Bairros</h3>
-              <p>
-                Aplicação para organização e visualização estratégica de dados.
-              </p>
-              <a href="LINK_GITHUB" target="_blank">Ver no GitHub</a>
-            </div>
+          <!-- PROJETO 3 -->
+          <div class="project-card">
+            <img src="img/projeto3.png" alt="Sistema de Bairros" />
+            <h3>Sistema de Bairros</h3>
+            <p>App para organização e visualização de dados por bairros.</p>
+            <a href="https://github.com/Manu21avila/..." target="_blank"
+              >Ver no GitHub</a
+            >
           </div>
         </div>
+        <button id="nextBtn" class="carousel-btn">&#9654;</button>
       </div>
-
-      <button class="arrow right" onclick="scrollProjects(1)">&#10095;</button>
-
-      <div class="carousel-dots" id="dots"></div>
     </section>
 
     <!-- CONTATO -->
