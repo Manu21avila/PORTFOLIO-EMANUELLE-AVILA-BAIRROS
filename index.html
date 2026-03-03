@@ -112,8 +112,9 @@
         <div class="skill-card">Modelagem de Dados</div>
         <div class="skill-card">E-commerce</div>
       </div>
-      <h2 class="section-title">Diferencial</h2>
-      <p>
+
+      <h2 class="section-title diferencial-title">Diferencial</h2>
+      <p class="diferencial-text">
         Experiência administrativa aplicada à análise de indicadores,
         organização de processos e apoio à tomada de decisão.
       </p>
@@ -163,63 +164,41 @@
           </button>
 
           <div class="carousel" id="carousel">
-            <div class="carousel-track">
-              <!-- PROJETO 1 -->
-              <div class="carousel-item">
-                <div class="projeto-card">
-                  <h3>Análise Estratégica de Vendas</h3>
-                  <p>
-                    Projeto de análise de dados utilizando Python, Pandas e
-                    visualizações para tomada de decisão.
-                  </p>
-                  <a
-                    href="https://github.com/Manu21avila/Analise-Estrategica-de-Vendas"
-                    target="_blank"
-                  >
-                    Ver no GitHub
-                  </a>
-                </div>
-              </div>
+            <!-- PROJETO 1 -->
+            <div class="project-card">
+              <img src="img/projeto1.png" alt="Projeto Análise de Vendas" />
+              <h3>Análise Estratégica de Vendas</h3>
+              <p>
+                Projeto de análise de dados utilizando Python, Pandas e
+                visualizações.
+              </p>
+              <a href="LINK_GITHUB" target="_blank">Ver no GitHub</a>
+            </div>
 
-              <!-- PROJETO 2 -->
-              <div class="carousel-item">
-                <div class="projeto-card">
-                  <h3>Portfólio Profissional</h3>
-                  <p>
-                    Site responsivo desenvolvido com HTML, CSS e JavaScript.
-                  </p>
-                  <a
-                    href="https://github.com/Manu21avila/PORTFOLIO-EMANUELLE-AVILA-BAIRROS"
-                    target="_blank"
-                  >
-                    Ver no GitHub
-                  </a>
-                </div>
-              </div>
+            <!-- PROJETO 2 -->
+            <div class="project-card">
+              <img src="img/projeto2.png" alt="Portfólio" />
+              <h3>Portfólio Profissional</h3>
+              <p>Site responsivo desenvolvido com HTML, CSS e JavaScript.</p>
+              <a href="LINK_GITHUB" target="_blank">Ver no GitHub</a>
+            </div>
 
-              <!-- PROJETO 3 -->
-              <div class="carousel-item">
-                <div class="projeto-card">
-                  <h3>Sistema de Bairros</h3>
-                  <p>
-                    Aplicação para organização e visualização estratégica de
-                    dados por bairros.
-                  </p>
-                  <a href="https://github.com/Manu21avila" target="_blank">
-                    Ver no GitHub
-                  </a>
-                </div>
-              </div>
+            <!-- PROJETO 3 -->
+            <div class="project-card">
+              <img src="img/projeto3.png" alt="Sistema de Bairros" />
+              <h3>Sistema de Bairros</h3>
+              <p>
+                Aplicação para organização e visualização estratégica de dados.
+              </p>
+              <a href="LINK_GITHUB" target="_blank">Ver no GitHub</a>
             </div>
           </div>
-
-          <button class="arrow right" onclick="scrollProjects(1)">
-            &#10095;
-          </button>
         </div>
-
-        <div class="carousel-dots" id="dots"></div>
       </div>
+
+      <button class="arrow right" onclick="scrollProjects(1)">&#10095;</button>
+
+      <div class="carousel-dots" id="dots"></div>
     </section>
 
     <!-- CONTATO -->
@@ -274,7 +253,7 @@
 
     <script>
       const carousel = document.getElementById("carousel");
-      const cards = document.querySelectorAll(".project-card");
+      const cards = document.querySelectorAll("project-card");
       const dotsContainer = document.getElementById("dots");
 
       let autoScroll;
@@ -287,7 +266,11 @@
 
         dot.addEventListener("click", () => {
           index = i;
-          updateCarousel();
+          const cardWidth = cards[0].offsetWidth + 25;
+          carousel.scrollTo({
+            left: index * cardWidth,
+            behavior: "smooth",
+          });
         });
 
         dotsContainer.appendChild(dot);
